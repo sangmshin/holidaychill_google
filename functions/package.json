@@ -1,0 +1,35 @@
+{
+  "name": "holiday-chill",
+  "description": "This holiday, chill out with Jack Frost through guided meditation or relaxing sounds of winter.",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "Deutsch Inc.",
+  "engines": {
+    "node": ">=6.11.1"
+  },
+  "scripts": {
+    "lint": "eslint --fix \"**/*.js\"",
+    "test": "npm run lint",
+    "start": "firebase serve --only functions",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "build": "node_modules/.bin/tslint -p tslint.json && tsc"
+  },
+  "dependencies": {
+    "actions-on-google": "^1.5.0",
+    "deep-freeze": "0.0.1",
+    "firebase-admin": "^4.2.1",
+    "firebase-functions": "^0.5.7",
+    "sprintf-js": "^1.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-semistandard": "^11.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-node": "^5.0.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1"
+  }
+}
